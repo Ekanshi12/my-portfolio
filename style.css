@@ -1,0 +1,285 @@
+:root{
+    /* Light Mode */
+    --primary-font: "Poppins", sans-serif;
+    --primary-bg-color: #fbf6f6;
+    --primary-text-color: #000;
+    --secondary-color:#575757;
+    --btn-bg-color: pink;
+    --cta-hover-color:rgb(198, 100, 100);
+    --btn-bg-light: #eeeeee;
+
+    /* Dark Mode */
+    --dark-primary-bg-color: #222222;
+    --dark-primary-text-color: #ffffff;
+    --dark-secondary-color:#828282;
+    --dark-btn-bg-color: rgb(198, 100, 100);
+    --dark-cta-hover-color: pink;
+    --dark-btn-bg-light: #eeeeee;
+}
+
+.dark-theme {
+    --primary-bg-color: var(--dark-primary-bg-color);
+    --primary-text-color: var(--dark-primary-text-color);
+    --secondary-color:var(--dark-secondary-color);
+    --btn-bg-color: var(--dark-btn-bg-color);
+    --cta-hover-color: var(--dark-cta-hover-color);
+    --btn-bg-light: var(--dark-btn-bg-light);
+}
+
+body {
+    margin: 0;
+    font-family: var(--primary-font);
+    background-color: var(--primary-bg-color);
+    color: var(--primary-text-color);
+}
+
+.theme-btn {
+    position: relative;
+    left: 8.5rem;
+}
+
+h1, h2, h3, p {
+    margin: 0;
+    cursor: default;
+}
+
+article, 
+footer, 
+.hero, 
+.logo-container,
+.experience, 
+.cta, 
+.project-skills, 
+.btn-bg, 
+.project, 
+.skills{
+    display: flex;
+}
+
+.hero, .project, .skills {
+    flex-direction: column;
+}
+
+.hero, .btn-bg, .project, .skills{
+    align-items: center;
+}
+
+.theme-btn, .logo-container a, .logo-container img {
+    height: 25px;
+}
+
+.hero, .experience, .wrapper {
+    text-align: center;
+}
+
+article, .hero, .logo-container, .project, .skills {
+    gap: 1rem;
+}
+
+.picture{
+    height : 128px;
+    width: 128px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+}
+
+.inner-circle{
+    content: "";
+    position: absolute;
+    top: 1.6px;
+    left: 1.6px;
+    bottom: 1.6px;
+    right: 1.6px;
+    border-radius: 50%;
+    border: 2.8px solid var(--primary-bg-color);
+    z-index: 1;
+}
+
+.picture img, .wrapper img{
+    width: 100%;
+}
+
+.picture img{
+    height: 100%;
+    object-fit: cover; /*to avoid distorting image */
+    object-position: top -12.9px right -0.8px; /* needed to put face in the middle*/
+    transform: scale(1.9);
+}
+
+.hero-info h1, h2 {
+    font-weight: 400;
+}
+
+article p, .hero-info h2{
+    color: var(--secondary-color);
+}
+
+.hero-info h2{
+    font-size: 20px;
+    margin: 0 0 16px 0;
+}
+
+footer, .logo-container, 
+.experience, .cta, 
+.project-skills, .btn-bg {
+    justify-content: center;
+}
+
+.experience{
+    margin: auto;
+    margin-top: 22.4px;
+    max-width: 400px;
+    text-align: center;
+}
+
+.experience b{
+    font-weight: 500;
+}
+
+.experience h2{
+    width: 30%;
+    font-weight: 300;
+    font-size: 14.4px;
+}
+
+.cta{
+    margin-top: 19.2px;
+}
+
+.cta, .btn-bg{
+    gap: 32px;
+}
+
+.btn, .btn-2, .btn-bg{
+    border-radius: 11.2px;
+    border: none;
+}
+
+.btn, .btn-2, .btn-bg, .wrapper h3{
+    font-weight: 600;
+}
+.btn, .btn-2, .btn-bg, .wrapper, .project-wrapper{
+    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.download-btn:hover, .contact-btn:hover{
+    background-color:var(--cta-hover-color);
+}
+
+.theme-btn, .download-btn:hover, 
+.contact-btn:hover, .btn-2:hover,
+.wrapper img:hover{
+    cursor: pointer;
+}
+
+.btn:hover, .project-wrapper:hover, 
+.contact-btn:hover, .btn-2:hover,
+.logo-container a:hover{
+    transform: scale(0.98);
+}
+
+.btn:active, .btn-2:active, .project-wrapper:active, 
+.logo-container a:active{
+    transform: scale(1);
+}
+
+.contact-btn, .download-btn {
+    background-color: var(--btn-bg-color); 
+}
+
+.contact-btn:hover{
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-2:hover, .active-btn{
+    background-color: white;
+}
+
+.project-wrapper{
+    max-height: 20rem;
+    max-width: 20rem;
+    position: relative;
+    overflow: hidden;
+} 
+
+.btn, .btn-2{
+    height: 48px;
+}
+
+.btn{
+    width: 144px;
+}
+
+.btn-2{
+    width: 136px;
+}
+
+.download-btn{
+    transition: background-color 0.3s ease;
+}
+
+.project-skills{
+    height: 64px;
+    margin-top: 24px;
+    position: relative;
+}
+
+.btn-bg, .wrapper{
+    width: 320px;
+}
+
+article p, .btn-bg{
+    background-color: var(--btn-bg-light);
+}
+
+.hero, .project, .skills{
+    margin-top: 32px;
+}
+
+.skills{
+    display: none;
+}
+
+.wrapper img{
+    border-radius: 16px;
+
+}
+
+article, .wrapper h3{
+    margin-bottom: 24px;
+}
+
+article{
+    flex-wrap: wrap;
+}
+
+article p{
+    border-radius: 8px;
+    flex-grow: 20;
+    padding: 16px;
+}
+
+footer{
+    margin: 48px 0;
+}
+
+@media screen and (min-width:900px){
+    .skills, .project{
+        flex-direction: row;
+        width: 45rem;
+    }
+    .skills{
+        margin: 2rem auto 0;
+        justify-content: center;
+    }
+    .project{
+        margin: 2rem auto;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .wrapper{
+        width: calc(48%);
+        flex: none;
+    }
+}

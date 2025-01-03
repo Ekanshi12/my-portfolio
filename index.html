@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <section  class="hero">
+        <img 
+            id = "toggleTheme"
+            class="theme-btn"
+            src="images/theme_light_mode.png" 
+            alt="theme icon">
+        
+        <div class="picture">
+            <div class = "inner-circle"></div>
+            <img src="images/MyFullPic.jpg" alt="Me">
+        </div>
+
+        <div class="hero-info">
+            <h1>Ekanshi</h1>
+            <h2>Developer</h2>
+            <div class="logo-container">
+                <a href="https://github.com/Ekanshi12">
+                    <img src="images/Github_logo_light.jpeg" alt="github logo">
+                </a>
+                <a href="https://www.linkedin.com/in/ekanshi-981247268/">
+                    <img src="images/linkedin_light.png" alt="linkedin logo">
+                </a>
+                <a href="mailto:ekanshi.exo@gmail.com">
+                    <img src="images/mail_icon_light.png" alt="mail logo">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="experience">
+        <h2>
+            <b>2</b><br />
+            Years<br />
+            Frontend and Learning...
+        </h2>
+        <h2>
+            <b>4</b><br />
+            Years<br />
+            B.Tech.
+        </h2>
+        <h2>
+            <b>6</b><br />
+            Months<br />
+            Sci-Fi Club Core Member
+        </h2>
+    </section>
+    <section class="cta">
+        <a href="images/resume.pdf" download>
+            <button class="btn download-btn">Download Resume</button>
+        </a>
+        <a href="mailto:ekanshi.exo@gmail.com">
+            <button class="btn contact-btn">Contact Me</button>
+        </a>
+    </section>
+    <section class="project-skills">
+        <div class="btn-bg">
+            <button class="btn-2 active-btn" 
+                id="project-btn">Projects</button>
+            <button class="btn-2" 
+                id="skills-btn">Skills</button>
+        </div>
+    </section>
+    <section class="project" id="project">
+        <div class="wrapper project-wrapper">
+            <a href="https://ieeexplore.ieee.org/abstract/document/10425687">
+                <img src="images/ProjectN.jpeg" alt="Project 1">
+            </a>
+        </div>
+        <div class="wrapper project-wrapper">
+            <a href="https://github.com/">
+                <img src="images/ProjectN1.jpeg" alt="Project 2">
+            </a>
+        </div>
+        <div class="wrapper project-wrapper">
+            <a href="https://github.com/">
+                <img src="images/ProjectN2.jpeg" alt="Project 3">
+            </a>
+        </div>
+        <div class="wrapper project-wrapper">
+            <a href="https://github.com/CU-IOT-623-Winning-Camp/introduction-to-c-plus-plus-and-data-structures-Ekanshi12">
+                <img src="images/ProjectN3.jpeg" alt="Project 4">
+            </a>
+        </div>
+    </section>
+    <section class="skills" id="skills">
+        <div class="wrapper">
+            <h3>Programming & Markup Languages</h3>
+                <article class="languages">
+                    <p>HTML</p>
+                    <p>CSS</p>
+                    <p>JavaScript</p>
+                    <p>C++</p>
+                    <p>Python</p>
+                </article>
+            <!-- <h3>Frontend</h3>
+            <article class="frontend-skills">
+                <p>HTML</p>
+                <p>CSS</p>
+                <p>JavaScript</p>
+                <p>TypeScript</p>
+                <p>React</p>
+                <p>Angular</p>
+                <p>Material UI</p>
+            </article> -->
+        </div>
+        <div class="wrapper">
+            <h3>Technologies and Frameworks</h3>
+            <article class="backend-skills">
+                <p>Machine Learning</p>
+                <p>IoT</p>
+                <p>Node.js</p>
+                <p>Git</p>
+                <p>MongoDB</p>
+                <!-- <p>Node Js</p>
+                <p>Express Js</p>
+                <p>MongoDB</p>
+                <p>Python</p>
+                <p>API</p>
+                <p>Git</p>
+                <p>GraphQL</p> -->
+            </article>
+        </div>
+    </section>
+    <footer><p>&copy Ekanshi</p></footer>
+</body>
+</html>
